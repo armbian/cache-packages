@@ -8,10 +8,10 @@ on:
 
 jobs:
 
-  "Firmware":
+  "Packages":
     if: ${{ github.repository_owner == 'armbian' }}
     runs-on: ubuntu-latest
-    name: "Firmware (small and full)"
+    name: "Varios packages"
     env:
       OCI_TARGET_BASE: "ghcr.io/${{ github.repository }}/" # This is picked up by the Docker launcher automatically
     steps:
